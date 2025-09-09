@@ -1,5 +1,7 @@
-fastapi>=0.111
-uvicorn[standard]>=0.29
-orjson>=3.10
-pydantic>=2.7
-python-dotenv>=1.0
+fastapi
+uvicorn[standard]
+orjson
+sqlmodel
+SQLAlchemy>=2.0
+pydantic
+psycopg[binary]>=3.2
