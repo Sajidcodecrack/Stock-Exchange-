@@ -14,9 +14,11 @@ app = FastAPI(title="sqlModel API", default_response_class=ORJSONResponse)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173","https://stock-exchange-yp2k.vercel.app"],
     allow_methods=["*"],
     allow_headers=["*"],
+    allow_credentials=False,
+    allow_origin_regex=r"https://.*\.vercel\.app",
 )
 app.add_middleware(GZipMiddleware, minimum_size=1024)
 
