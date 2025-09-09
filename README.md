@@ -107,9 +107,9 @@ npm run dev
 ADMIN_TOKEN=<long-random-string> ← used to seed CSV
 
 CORS in main_sql.py:
-## create .env in frontend/:
-## VITE_API_URL=http://127.0.0.1:8000
-
+``` create .env in frontend/:
+ VITE_API_URL=http://127.0.0.1:8000
+```
 npm run dev
 ```
 ## Open: http://localhost:5173
